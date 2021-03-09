@@ -34,6 +34,7 @@ export default class CreateAdresses1615226605893 implements MigrationInterface {
           {
             name: "complement",
             type: "varchar",
+            isNullable: true,
           },
           {
             name: "postal_code",

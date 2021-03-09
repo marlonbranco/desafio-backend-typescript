@@ -13,35 +13,14 @@ class FakeUsersRepository implements IUsersRepository {
     return findUser;
   }
 
-  public async findByName(name: string): Promise<User[]> {
-    const findUser = this.users.filter((user) => user.name === name);
-
-    return findUser;
-  }
-
   public async findByEmail(email: string): Promise<User | undefined> {
     const findUser = this.users.find((user) => user.email === email);
 
     return findUser;
   }
-  public async findByEthinicity(ethinicity: string): Promise<User[]> {
-    const findUser = this.users.filter(
-      (user) => user.ethinicity === ethinicity
-    );
 
-    return findUser;
-  }
-
-  public async findByAge(age: number): Promise<User[]> {
-    const findUser = this.users.filter((user) => user.age === age);
-
-    return findUser;
-  }
-
-  public async findByWeight(weight: number): Promise<User[]> {
-    const findUser = this.users.filter((user) => user.weight === weight);
-
-    return findUser;
+  public async findAllUsers(): Promise<User[]> {
+    return this.users;
   }
 
   public async create({

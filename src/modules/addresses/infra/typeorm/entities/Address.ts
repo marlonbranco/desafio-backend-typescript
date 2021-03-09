@@ -10,6 +10,10 @@ import {
 
 import User from "@modules/users/infra/typeorm/entities/User";
 
+enum DEFAULT {
+  EMPTY = "",
+}
+
 @Entity("addresses")
 class Address {
   @PrimaryGeneratedColumn("uuid")
@@ -28,7 +32,10 @@ class Address {
   @Column()
   number: string;
 
-  @Column()
+  @Column({
+    nullable: true,
+    default: DEFAULT.EMPTY,
+  })
   complement: string;
 
   @Column()

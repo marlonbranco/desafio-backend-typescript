@@ -16,14 +16,6 @@ class UsersRepository implements IUsersRepository {
     return findUser;
   }
 
-  public async findByName(name: string): Promise<User[]> {
-    const findUser = await this.ormRepository.find({
-      where: { name },
-    });
-
-    return findUser;
-  }
-
   public async findByEmail(email: string): Promise<User | undefined> {
     const findUser = await this.ormRepository.findOne({
       where: { email },
@@ -32,26 +24,8 @@ class UsersRepository implements IUsersRepository {
     return findUser;
   }
 
-  public async findByEthinicity(ethinicity: string): Promise<User[]> {
-    const listUsers = await this.ormRepository.find({
-      where: { ethinicity },
-    });
-
-    return listUsers;
-  }
-
-  public async findByAge(age: number): Promise<User[]> {
-    const listUsers = await this.ormRepository.find({
-      where: { age },
-    });
-
-    return listUsers;
-  }
-
-  public async findByWeight(weight: number): Promise<User[]> {
-    const listUsers = await this.ormRepository.find({
-      where: { weight },
-    });
+  public async findAllUsers(): Promise<User[]> {
+    const listUsers = await this.ormRepository.find();
 
     return listUsers;
   }

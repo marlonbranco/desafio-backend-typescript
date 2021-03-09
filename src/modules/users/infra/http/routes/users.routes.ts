@@ -47,6 +47,9 @@ usersRouter.put(
     },
   })
 );
+
 usersRouter.delete("/:id", ensureAuthenticated, usersController.delete);
+
+usersRouter.get("/", ensureAuthenticated, usersController.list);
 
 export default usersRouter;

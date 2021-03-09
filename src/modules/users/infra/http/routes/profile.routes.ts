@@ -2,15 +2,16 @@ import { Router } from "express";
 import { celebrate, Segments, Joi } from "celebrate";
 
 import ProfileController from "../controllers/ProfileController";
-
+import UserAddressesController from "@modules/users/infra/http/controllers/UserAddressesController";
 import ensureAuthenticated from "../middlewares/ensureAuthenticated";
 
 const profileRouter = Router();
 const profileController = new ProfileController();
+const userAddressesController = new UserAddressesController();
 
 profileRouter.use(ensureAuthenticated);
 
-//profileRouter.get('/', profileController.show);
+profileRouter.get("/addresses/", userAddressesController.index);
 profileRouter.put(
   "/",
   celebrate({

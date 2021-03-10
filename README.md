@@ -91,7 +91,7 @@ Nesta rota é possível fazer a atualização nos dados do usuário, pelo ID inf
 **DELETE** Delete User:
 Nesta rota é possível deletar um usuário, pelo ID informado no Query Params:
 
-> /users/?user_id
+> /user/?user_id
 
 ## Users
 

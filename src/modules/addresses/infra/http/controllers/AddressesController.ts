@@ -18,7 +18,7 @@ export default class AddressesController {
     return response.json().status(200);
   }
   public async create(request: Request, response: Response): Promise<Response> {
-    const user_id = request.params.id;
+    const user_id = request.params.user_id;
     const {
       address,
       city,

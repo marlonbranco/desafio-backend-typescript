@@ -4,13 +4,13 @@ Simples CRUD de Users e Addresses aplicando as técnologias NodeJS, TypeScript, 
 
 Além disso na construção do projeto foram aplicados os conceitos de SOLID e TDD.
 
-### Após clonar o repositório instale as dependências
+## Após clonar o repositório instale as dependências
 
 ```bash
 yarn
 ```
 
-### Criação do Banco de Dados com Docker
+## Criação do Banco de Dados com Docker
 
 ```bash
 docker-compose -f docker-compose.yml up -d
@@ -18,7 +18,7 @@ docker-compose -f docker-compose.yml up -d
 
 > Após a execução a imagem desafio-backend-typescript será gerada no seu Docker
 
-### Criando a estrutura básica do Banco de Dados
+## Criando a estrutura básica do Banco de Dados
 
 Para criar as tabelas no banco de dados, execute o seguinte comando:
 
@@ -26,7 +26,11 @@ Para criar as tabelas no banco de dados, execute o seguinte comando:
 yarn typeorm migration:run
 ```
 
-### Executando o projeto
+### Estrutura do Banco
+
+![alt text](https://ibb.co/3f9pGM3)
+
+## Executando o projeto
 
 Para executar o servidor rode o seguinte comando:
 
@@ -36,9 +40,9 @@ yarn dev:server
 
 > Se estiver tudo ok aparecerá a seguinte mensagem no terminal: Back-end started on port 3333! 🚀
 
-### Documentação das rotas da API com Postman
+# Documentação das rotas da API com Postman
 
-Acesse a este que com a documentação das rotas e é possível testálas pelo próprio Postman: shorturl.at/puvwG
+Acesse a este que com a documentação das rotas e é possível testálas pelo próprio Postman: http://tinyurl.com/back-end-documentation
 
 Habilite o **Enviroment _dev_** no canto superior direito, onde está escrito **No Enviroment**.
 
@@ -46,26 +50,26 @@ Nele já estão configuradas as variáveis de ambiente como a base_url e o token
 
 **_OBS:_**Todo o envio de dados será feito por um arquivo JSON através do Body da requisição.
 
-### Para começar a usar as Rotas:
+## Para começar a usar as Rotas:
 
 Primeiro **crie** um usuário, já há um User **John Doe** definido no Body da requisição:
 **POST** Create User
 
-### Sessions
+## Sessions
 
 Em seguida obtenha o **Token JWT** para a configuração do **Enviroment** criando uma sessão:
 **POST** Create a Session
 
-#### IMPORTANTE
+# IMPORTANTE
 
 Copie e cole o **Token** obtido no **Enviroment _dev_** na variável **token**, é importante que você faça isso porque TODAS as rotas EXCETO a rota Create User fazem o uso da autenticação por JWT.
 
-### Users
+## Users
 
 **GET** List All Users:
 A rota lista todas as informações de todos os usuários da aplicação.
 
-### User
+## User
 
 **GET** Show User:
 Mostra os dados do usuário, é necessário passar o ID do usuário os Query Params do request:
@@ -87,21 +91,21 @@ Nesta rota é possível deletar um usuário, pelo ID informado no Query Params:
 
 > /users/?user_id
 
-### Users
+## Users
 
 **GET** List All Users:
 Lista todos os usuários cadastrados:
 
 > /users/
 
-### Profile
+## Profile
 
 **PUT** Update User Profile:
 Nesta rota é possível fazer a atualização nos dados do usuário **AUTENTICADO** e a **TROCA DE SENHA** informando a **old_password**, a troca de senha é opcional:
 
 > /profile/
 
-### Address
+## Address
 
 **POST** Create Address:
 Crie um endereço a partir do ID do usuário informado no Query Params do request:
@@ -123,7 +127,7 @@ Nesta rota é possível deletar um endereço, pelo ID informado no Query Params:
 
 > /address/?address_id
 
-### Addresses
+## Addresses
 
 **GET** List All Addresses:
 Lista todos os endereços cadastrados:

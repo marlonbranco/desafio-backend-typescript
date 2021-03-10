@@ -28,7 +28,7 @@ yarn typeorm migration:run
 
 ### Estrutura do Banco
 
-[![UML do Banco] (https://ibb.co/3f9pGM3)](https://i.ibb.co/yhc6GY9/UML-Backend-Type-Script.png)
+[![UML do Banco] (https://i.ibb.co/yhc6GY9/UML-Backend-Type-Script.png)](https://ibb.co/3f9pGM3)
 
 ## Executando o projeto
 

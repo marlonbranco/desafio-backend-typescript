@@ -98,7 +98,7 @@ yarn typeorm migration:run
 
 Renomeie o arquivo **.env.exemple** para **_.env_**.
 
-Em seguida gere um hash pelo [![MD5 HashGenerator](https://img.shields.io/badge/-MD5%20Hashgenerator-297AFF?logo=hash&logoColor=white)][https://www.md5hashgenerator.com/]
+Em seguida gere um hash pelo [![MD5 HashGenerator](https://img.shields.io/badge/-MD5%20Hashgenerator-297AFF?logo=hash&logoColor=white)](https://www.md5hashgenerator.com/)
 
 Agora cole o hash gerado na configuração de APP_SECRET no arquivo **.env**:
 

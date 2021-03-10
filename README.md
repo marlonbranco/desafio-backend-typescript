@@ -134,7 +134,7 @@ Primeiro **crie** um usuário, acessando a rota **Create User** dentro de **User
 
 > /users
 
-## Sessions
+## Sessions 👨‍💻
 
 **POST** Create a Session:
 
@@ -142,11 +142,11 @@ Em seguida obtenha o **Token JWT** para a configuração do **Enviroment** crian
 
 > /sessions
 
-## IMPORTANTE
+## IMPORTANTE ‼
 
 Copie e cole o **Token** obtido no **Enviroment _dev_** na variável **token**, é importante que você faça isso porque TODAS as rotas EXCETO a rota Create User fazem o uso da autenticação por JWT.
 
-# Users
+# Users 👨‍💻
 
 **POST** Create User:
 
@@ -189,7 +189,7 @@ Nesta rota é possível deletar um usuário, pelo ID informado no Path Variables
 
 > /users/user/:user_id
 
-# Addresses
+# Addresses 🏠
 
 **POST** Create Address:
 

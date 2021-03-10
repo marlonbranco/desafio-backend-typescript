@@ -1,5 +1,6 @@
 # Projeto Backend CRUD em TypeScript & NodeJS ⚙
 
+[![Node.JS](https://img.shields.io/badge/-Node.JS-339933?logo=node.js&logoColor=white)](https://nodejs.org/en/) [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 Simples CRUD de Users e Addresses aplicando as técnologias NodeJS, TypeScript, TypeORM, Express, JWT e BCrypt.
 
 Além disso na construção do projeto foram aplicados os conceitos de SOLID e TDD.
@@ -42,7 +43,7 @@ yarn dev:server
 
 # Documentação das rotas da API com Postman
 
-Acesse a este que com a documentação das rotas e é possível testálas pelo próprio Postman: [![POSTMAN](https://img.shields.io/badge/-POSTMAN-orange)](http://tinyurl.com/back-end-documentation)
+Acesse a este que com a documentação das rotas e é possível testálas pelo próprio Postman: [![Postman](https://img.shields.io/badge/-POSTMAN-FF6C37?logo=postman&logoColor=white)](http://tinyurl.com/back-end-documentation)
 
 Habilite o **Enviroment _dev_** no canto superior direito, onde está escrito **No Enviroment**.
 

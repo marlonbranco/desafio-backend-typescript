@@ -2,7 +2,7 @@
 
 [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Node.JS](https://img.shields.io/badge/-Node.JS-339933?logo=node.js&logoColor=white)](https://nodejs.org/en/)
 
-Simples CRUD de Users e Addresses aplicando as técnologias Node.JS, TypeScript, TypeORM, TSyringe, Express, JWT e BCrypt.
+Simples CRUD de Users e Addresses aplicando as técnologias Node.JS, TypeScript, TypeORM, TSyringe, Jest, Express, JWT e BCrypt.
 
 Além disso na construção do projeto foram aplicados os conceitos de SOLID, DDD e TDD.
 

@@ -5,8 +5,8 @@
     "host": "localhost",
     "port": 5432,
     "username": "postgres",
-    "password": "docker",
-    "database": "desafio_backend_typescript",
+    "password": "postgres",
+    "database": "backend_backend_typescript",
     "entities": [
       "./src/modules/**/infra/typeorm/entities/*.ts"
     ],

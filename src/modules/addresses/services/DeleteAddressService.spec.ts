@@ -1,22 +1,19 @@
 import AppError from "@shared/errors/AppError";
 
 import FakeAddressesRepository from "../repositories/fakes/FakeAddressesRepository";
-import CreateAddressService from "./CreateAddressService";
 import DeleteAddressService from "./DeleteAddressService";
 
-let fakeUsersRepository: FakeAddressesRepository;
-let createAddress: CreateAddressService;
+let fakeAddressesRepository: FakeAddressesRepository;
 let deleteAddress: DeleteAddressService;
 
 describe("DeleteAddress", () => {
   beforeEach(() => {
-    fakeUsersRepository = new FakeAddressesRepository();
-    createAddress = new CreateAddressService(fakeUsersRepository);
-    deleteAddress = new DeleteAddressService(fakeUsersRepository);
+    fakeAddressesRepository = new FakeAddressesRepository();
+    deleteAddress = new DeleteAddressService(fakeAddressesRepository);
   });
 
   it("should be able to delete address", async () => {
-    const userAddress = await createAddress.execute({
+    const userAddress = await fakeAddressesRepository.create({
       user_id: "user",
       address: "Some Address",
       city: "Some City",

@@ -38,7 +38,7 @@ class CreateAddressService {
     const checkUserExists = await this.usersRepository.findById(user_id);
 
     if (!checkUserExists) {
-      throw new AppError("User does not exist");
+      throw new AppError("User does not exist.");
     }
     const userAddress = await this.addressesRepository.create({
       user_id,

@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: "desafio-backend-typescript_postgres"
+    environment:
+      - POSTGRES_DB=backend_backend_typescript
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432

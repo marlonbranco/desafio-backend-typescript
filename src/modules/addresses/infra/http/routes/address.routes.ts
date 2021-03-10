@@ -8,6 +8,8 @@ const addressRouter = Router();
 const addressesController = new AddressesController();
 
 addressRouter.use(ensureAuthenticated);
+addressRouter.get("/", ensureAuthenticated, addressesController.list);
+addressRouter.get("/:id", ensureAuthenticated, addressesController.show);
 
 addressRouter.post(
   "/:id",

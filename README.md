@@ -36,9 +36,9 @@ yarn dev:server
 
 > Se estiver tudo ok aparecerá a seguinte mensagem no terminal: Back-end started on port 3333! 🚀
 
-### Testando as rotas da API com Postman
+### Documentação das rotas da API com Postman
 
-Acesse a este link que já possui todas as rotas configuradas: shorturl.at/apxPQ
+Acesse a este que com a documentação das rotas e é possível testálas pelo próprio Postman: shorturl.at/puvwG
 
 Habilite o **Enviroment _dev_** no canto superior direito, onde está escrito **No Enviroment**.
 
@@ -123,7 +123,7 @@ Nesta rota é possível deletar um endereço, pelo ID informado no Query Params:
 
 > /address/?address_id
 
-### addresses
+### Addresses
 
 **GET** List All Addresses:
 Lista todos os endereços cadastrados:

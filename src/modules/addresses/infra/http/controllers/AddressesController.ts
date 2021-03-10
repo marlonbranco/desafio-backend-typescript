@@ -4,6 +4,7 @@ import { container } from "tsyringe";
 import CreateAddressService from "@modules/addresses/services/CreateAddressService";
 import DeleteAddressService from "@modules/addresses/services/DeleteAddressService";
 import ListAddressesService from "@modules/addresses/services/ListAddressesService";
+import UpdateAddressService from "@modules/addresses/services/UpdateAddressService";
 
 export default class AddressesController {
   public async delete(request: Request, response: Response): Promise<Response> {
@@ -16,7 +17,7 @@ export default class AddressesController {
     return response.json().status(200);
   }
   public async create(request: Request, response: Response): Promise<Response> {
-    const user_id = request.user.id;
+    const user_id = request.params.id;
     const {
       address,
       city,
@@ -46,5 +47,30 @@ export default class AddressesController {
     const addresses = await listAddresses.execute();
 
     return response.json(addresses);
+  }
+  public async update(request: Request, response: Response): Promise<Response> {
+    const address_id = request.params.id;
+    const {
+      address,
+      city,
+      complement,
+      number,
+      postal_code,
+      state,
+    } = request.body;
+
+    const updateAddress = container.resolve(UpdateAddressService);
+
+    const updatedAddress = await updateAddress.execute({
+      address_id,
+      address,
+      city,
+      complement,
+      number,
+      postal_code,
+      state,
+    });
+
+    return response.json(updatedAddress);
   }
 }

@@ -5,7 +5,7 @@ import ListUserAddressesService from "@modules/addresses/services/ListUserAddres
 
 export default class AddressesController {
   public async index(request: Request, response: Response): Promise<Response> {
-    const user_id = request.user.id;
+    const user_id = request.params.id;
     const listAddresses = container.resolve(ListUserAddressesService);
 
     const addresses = await listAddresses.execute(user_id);

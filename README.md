@@ -1,5 +1,7 @@
-# Projeto Back-end CRUD em TypeScript
+# Projeto Back-end CRUD em TypeScript & NodeJS
 
-Este projeto utiliza as técnologias NodeJS, TypeScript, TypeORM, Express.
+Simples CRUD de Users e Addresses aplicando as técnologias NodeJS, TypeScript, TypeORM, Express e BCrypt.
 
-Nele foram aplicados os conceitos de SOLID e TDD.
+Além disso na construção do projeto foram aplicados os conceitos de SOLID e TDD.
+
+# Instalação do Banco de Dados

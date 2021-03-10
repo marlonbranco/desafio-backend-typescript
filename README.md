@@ -62,7 +62,7 @@ yarn typeorm migration:run
     │   ├── infra         # Infra específico do módulo
     │   ├── providers     # Provider específico do módulo (Ex: HashProvider)
     │   ├── repositories  # Repositórios do usuário incluindo o Fake para o TDD
-    │   └── services      # Services com as regras de negócio do domínio
+    │   └── services      # Services com as regras de negócio do domínio e testes unitários
     └── ...
 
 ### Dentro da pasta infra 📁
@@ -104,6 +104,14 @@ Agora cole o hash gerado na configuração de APP_SECRET no arquivo **.env**:
 
 ```
 APP_SECRET=#MD5 hash
+```
+
+# Executando os testes 🧪
+
+Para os testes unitários execute o seguinte comando:
+
+```bash
+yarn test
 ```
 
 # Executando o projeto ▶

@@ -28,7 +28,7 @@ yarn typeorm migration:run
 
 ### Estrutura do Banco
 
-![UML do BD](.github/media/UML.png)]
+![UML do BD](.github/media/UML.png)
 
 ## Executando o projeto
 
@@ -42,7 +42,7 @@ yarn dev:server
 
 # Documentação das rotas da API com Postman
 
-Acesse a este que com a documentação das rotas e é possível testálas pelo próprio Postman: http://tinyurl.com/back-end-documentation
+Acesse a este que com a documentação das rotas e é possível testálas pelo próprio Postman: [![POSTMAN](https://img.shields.io/badge/-POSTMAN-orange)](http://tinyurl.com/back-end-documentation)
 
 Habilite o **Enviroment _dev_** no canto superior direito, onde está escrito **No Enviroment**.
 

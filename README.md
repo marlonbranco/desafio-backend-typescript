@@ -1,6 +1,7 @@
 # Projeto Backend CRUD em TypeScript & NodeJS ⚙
 
 [![Node.JS](https://img.shields.io/badge/-Node.JS-339933?logo=node.js&logoColor=white)](https://nodejs.org/en/) [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
 Simples CRUD de Users e Addresses aplicando as técnologias NodeJS, TypeScript, TypeORM, Express, JWT e BCrypt.
 
 Além disso na construção do projeto foram aplicados os conceitos de SOLID e TDD.
